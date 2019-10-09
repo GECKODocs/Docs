@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Projects · GECKO Docs v1.0.10</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Projects"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Projects · GECKO Docs v1.0.10"/><meta property="og:type" content="website"/><meta property="og:url" content="http://GECKODocs.github.io/Docs/"/><meta property="og:description" content="## Projects"/><meta property="og:image" content="http://GECKODocs.github.io/Docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://GECKODocs.github.io/Docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/arta.min.css"/><link rel="alternate" type="application/atom+xml" href="http://GECKODocs.github.io/Docs/blog/atom.xml" title="GECKO Docs v1.0.10 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="http://GECKODocs.github.io/Docs/blog/feed.xml" title="GECKO Docs v1.0.10 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/Docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/Docs/css/main.css"/><script src="/Docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docs/"><img class="logo" src="/Docs/img/favicon.ico" alt="GECKO Docs v1.0.10"/><h2 class="headerTitleWithLogo">GECKO Docs v1.0.10</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Docs/docs/gs1" target="_self">Docs</a></li><li class=""><a href="/Docs/docs/api1" target="_self">API</a></li><li class=""><a href="/Docs/help" target="_self">Help</a></li><li class=""><a href="/Docs/blog/" target="_self">Blog</a></li><li class=""><a target="_self">Videos</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Projects</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/gs1">Get started</a></li><li class="navListItem"><a class="navItem" href="/Docs/docs/gs2">Next Steps</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Dashboard</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/db1">Dashboard</a></li><li class="navListItem"><a class="navItem" href="/Docs/docs/db2">Project and tasks</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Projects</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/Docs/docs/pr1">Projects</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Activity</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/act1">Activity</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Calendar</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/cal1">Calendar</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Reports</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/rep1">Reports</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">DLT Audits</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/dlt1">DLT audit</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Folders</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/fol1">Folder</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Users</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/usr1">Users</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Projects</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="projects"></a><a href="#projects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Projects</h2>
+<p>Once you click on ‘Projects’ from the navigation pane you have the option to Browse Projects, view current Workflows, Categories, Statuses and Clients.
+<img src="/Docs/docs/assets/browseProjects.png" alt="Projects"></p>
+<h2><a class="anchor" aria-hidden="true" id="browse-projects"></a><a href="#browse-projects" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Browse Projects</h2>
+<p>Allows you to oversee the Projects assigned to you.</p>
+<p>You can navigate into each Project, ‘Add Project’ and filter to view a fund by Category.</p>
+<p>Click on any project to view.
+<img src="/Docs/docs/assets/allCat.png" alt="Browse-Categories"></p>
+<h2><a class="anchor" aria-hidden="true" id="static-data"></a><a href="#static-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Static Data</h2>
+<p>Below we have clicked into the project ‘Ocean Dial Investment Funds plc’ displaying the underlying Project workflow which shows all tasks associated with that fund.</p>
+<p>The left-hand column displays the <strong>static data</strong> of the fund.
+<img src="/Docs/docs/assets/staticData.png" alt="Static-Data"></p>
+<p>Click into any task to view its details.</p>
+<h2><a class="anchor" aria-hidden="true" id="drag-and-drop"></a><a href="#drag-and-drop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Drag and Drop</h2>
+<p><strong>Drag and drop</strong> tasks into different stages of the workflow.</p>
+<p>Users assigned to the same task receive <strong>email updates</strong> as you are dragging and dropping tasks into different stages of the workflow
+<img src="/Docs/docs/assets/drag.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="new-task"></a><a href="#new-task" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>New Task</h2>
+<p>Add new task by clicking <strong>Add New</strong></p>
+<p>A new tab should appear to create task</p>
+<p>Create your task by entering the <strong>Task Title</strong></p>
+<p>Choose the <strong>Milestone</strong> related to your task</p>
+<p>Choose <strong>Repetition Time</strong>, i.e. Daily, Monthly, Annually</p>
+<p>Enter your <strong>Due Date</strong></p>
+<p>Set the <strong>Status</strong> of your task i.e. In Progress, Complete, Overdue</p>
+<p>Set the level of <strong>Priority</strong> of your task i.e. High/Low</p>
+<p>Enter Description</p>
+<p>Create a <strong>Checklist/To Do List</strong> within that task to keep track of responsibilities</p>
+<p>To complete adding a task click <strong>Add Task</strong></p>
+<p><strong>Note: you can edit details within tasks at any time</strong> (Look at the image below relating to adding a new task)
+<img src="/Docs/docs/assets/addNew.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="actioning-editing-tasks"></a><a href="#actioning-editing-tasks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Actioning/Editing Tasks</h2>
+<p>Clicking into an existing task will display the granular detail underlying each task i.e. <strong>audit trail</strong>, <strong>messages</strong>, being able to attach <strong>documents</strong> and <strong>checklists</strong> etc.</p>
+<p><strong>Members</strong> - Visibility of permissioned users that can see this task, users can be added or deleted</p>
+<p>User can edit the Due Date, Priority, Milestone, Repetition Time, Status and Description</p>
+<p><strong>Messaging functionality</strong> – users can send messages that are visible to other users assigned to that task
+<img src="/Docs/docs/assets/actionEdit.png" alt="Drag-Tasks"></p>
+<p>Below this you can “Drop files here to upload” by simply Dragging and Dropping documents/files related to that task</p>
+<p><img src="/Docs/docs/assets/fileUpload.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="sub-tasks"></a><a href="#sub-tasks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sub Tasks</h2>
+<p><strong>Sub Tasks</strong> is a great feature if there's a need of having a task within a task and it also reduces the amount of tasks that are visible in the project's columns making it more lean and efficient</p>
+<p>Within a task you can add a new sub task by clicking ‘Add New Sub-Task’</p>
+<p>A new form will appear to create new sub-task</p>
+<p>Create your task by entering ‘Task Title’</p>
+<p>Choose the ‘Milestone’ related to your task</p>
+<p>Choose ‘Repetition Time’, i.e. Daily, Monthly, Annually</p>
+<p>Enter your ‘Due Date’</p>
+<p>Set the ‘Status’ of your task i.e. In Progress, Complete, Overdue</p>
+<p>Set the level of ‘Priority’ of your task i.e. High/Low</p>
+<p>Enter the Description of the sub-task</p>
+<p>Create a Checklist/To Do List within that sub-task to keep track of responsibilities</p>
+<p>To complete adding a task click ‘Add Task’</p>
+<p>Note: you can edit details within your sub-task at any time</p>
+<p><strong>Checklist</strong> functionality allows you to permission different people or entities in to the checklist items.</p>
+<p><strong>Tagging</strong> Functionality – adding tags (key words) to tasks to categorise similar tasks and for reporting purposes. Tasks can be searched for via these tags</p>
+<p><strong>Audit Trail of Activity</strong> – any changes made to tasks are recorded and tracked in real-time within the system</p>
+<p><img src="/Docs/docs/assets/tags.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="workflows"></a><a href="#workflows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Workflows</h2>
+<p>Workflows are set up based on their related task.</p>
+<p>You can <strong>Add Workflows</strong> by clicking the + Add Workflows button</p>
+<p>You can also Edit/Delete existing workflows</p>
+<p>All projects are created using workflows, you can use it as a template when generating new Projects.</p>
+<p><img src="/Docs/docs/assets/workflow.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="categories"></a><a href="#categories" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Categories</h2>
+<p>This allows the user to filter Projects by Category. Within the Categories section you can also create the milestones associated with your projects.</p>
+<p>You can Add a new <strong>Category</strong> &amp; <strong>Delete</strong> existing categories
+<img src="/Docs/docs/assets/categories.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="statuses"></a><a href="#statuses" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Statuses</h2>
+<p>You can add different statuses by clicking <strong>Add Status</strong></p>
+<p><strong>Filter</strong> your status search by using the <strong>Search</strong> functionality
+<img src="/Docs/docs/assets/status.png" alt="Drag-Tasks"></p>
+<h2><a class="anchor" aria-hidden="true" id="clients"></a><a href="#clients" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clients</h2>
+<p>You can add different clients by clicking <strong>Add Client</strong></p>
+<p><strong>Filter</strong> your client search by using the search box functionality
+<img src="/Docs/docs/assets/clients.png" alt="Drag-Tasks"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docs/docs/db2"><span class="arrow-prev">← </span><span>Project and tasks</span></a><a class="docs-next button" href="/Docs/docs/act1"><span>Activity</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#projects">Projects</a></li><li><a href="#browse-projects">Browse Projects</a></li><li><a href="#static-data">Static Data</a></li><li><a href="#drag-and-drop">Drag and Drop</a></li><li><a href="#new-task">New Task</a></li><li><a href="#actioning-editing-tasks">Actioning/Editing Tasks</a></li><li><a href="#sub-tasks">Sub Tasks</a></li><li><a href="#workflows">Workflows</a></li><li><a href="#categories">Categories</a></li><li><a href="#statuses">Statuses</a></li><li><a href="#clients">Clients</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Docs/" class="nav-home"><img src="/Docs/img/favicon.ico" alt="GECKO Docs v1.0.10" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Docs/docs/gs1.html">Getting Started</a><a href="/Docs/docs/db1.html">Dashboard</a><a href="/Docs/docs/api2.html">API Reference</a></div><div><h5>Community</h5><a href="/Docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Docs/blog">Blog</a><a href="https://github.com/">GitHub</a></div></section><section class="copyright">Copyright © 2019 GECKO Governance</section></footer></div></body></html>
