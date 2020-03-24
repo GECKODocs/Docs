@@ -4,6 +4,7 @@ title: Reports
 sidebar_label: Reports
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Reports
 
@@ -13,9 +14,9 @@ Select Generate when you are happy to run a report based on the data selected
 
 
 Generated report (below)
-![Report](assets/report.png)
+<img alt="Reports" src={useBaseUrl('img/report.png')}/>
 
 You can click ‘Return’ to go back to ‘Task Reports’ and run another report
-![Report](assets/reportUser.png)
+<img alt="Reports" src={useBaseUrl('img/reportUser.png')}/>
 
 Or you can export the report in **PDF** format too.

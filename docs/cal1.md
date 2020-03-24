@@ -4,6 +4,10 @@ title: Calendar
 sidebar_label: Calendar
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
+
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
 
 ## Calendar
@@ -14,4 +18,4 @@ User permission level i.e. Tasks displayed on the calendar can be filtered here 
 
 At a superuser level, you can easily drag and drop different tasks across the calendar assigning them to different users
 
-![Calendar](assets/calendar.png)
+<img alt="Calendar" src={useBaseUrl('img/calendar.png')}/>

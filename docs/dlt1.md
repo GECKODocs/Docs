@@ -4,7 +4,7 @@ title: DLT Audit
 sidebar_label: DLT audit
 ---
 
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Audits
 
@@ -12,4 +12,4 @@ Click on ‘DLT Audits’ and see how activity can be tracked within Projects / 
 
 Full audit trail of activity is available for each Project / Fund / Task with the exact time and date it was modified.
 
-![DLT](assets/dlt.png)
+<img alt="DLT" src={useBaseUrl('img/dlt.png')}/>

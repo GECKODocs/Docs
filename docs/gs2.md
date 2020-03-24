@@ -4,6 +4,8 @@ title: Finalize the User Setup
 sidebar_label: Next Steps
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 ## On Logging in
 
 
@@ -11,4 +13,4 @@ Please make sure to edit your username and change your avatar as desired. It wil
 
 There are other fields available too, to keep your profile up to date.
 
-![On SignUp](assets/userDetails.png)
+<img alt="On Signup" src={useBaseUrl('img/userDetails.png')}/>
