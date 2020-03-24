@@ -8,12 +8,13 @@ import styles from './styles.module.css';
 
 
 const main = [ {
-  title: <>Easy to Use</>,
-  imageUrl: 'img/undraw_docusaurus_mountain.svg',
+  title: <>Full Onboarding Support</>,
+  imageUrl: 'img/onboarding.svg',
   description: (
     <>
-      Docusaurus was designed from the ground up to be easily installed and
-      used to get your website up and running quickly.
+       To make your onbarding experience great we are using best  UX  practises to have you up and 
+       runing on <a target="_blank" href="https://www.geckogovernance.io/"><b> GECKO </b></a>application, we also provide full 
+       support of other business elements like compliance, regulation and consultation.
     </>
   ),
 },]
@@ -21,22 +22,21 @@ const main = [ {
 const features = [
  
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Up to Date</>,
+    imageUrl: 'img/docsUpdated.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Constantly updated with every new released features or bugs ;)
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Help is just click away</>,
+    imageUrl: 'img/devSupport.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Full support provided shall you feel lost or need any extra video
+        tutorials. Further open APIs are currently in progress.
       </>
     ),
   },
