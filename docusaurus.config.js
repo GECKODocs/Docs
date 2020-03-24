@@ -1,10 +1,10 @@
 module.exports = {
   title: 'GECKO Docs',
   tagline: '',
-  url: 'https://akshatjen.github.io',
+  url: 'https://geckodocs.github.io',
   baseUrl: '/docs/',
   favicon: 'img/geckoWhite.png',
-  organizationName: 'AkshatJen', // Usually your GitHub org/user name.
+  organizationName: 'GECKODocs', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
