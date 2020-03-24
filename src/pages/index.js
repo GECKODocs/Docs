@@ -26,7 +26,7 @@ const features = [
     imageUrl: 'img/docsUpdated.svg',
     description: (
       <>
-        Constantly updated with every new released features or bugs ;)
+        Constantly updated with every new released features 🚀or bugs 🦠
       </>
     ),
   },
