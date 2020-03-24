@@ -78,8 +78,8 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Welcome to the GECKO Documentation. You will find manual, APIs, docs and all support here">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
         <img alt="GECKO" class="gecko" src="img/geckoWhite.png"></img>
@@ -89,8 +89,10 @@ function Home() {
           <span className="hero_title_blue"> relevant </span>
           documentation
           <span className="hero_title_blue"> quickly</span>
-          , focus on your
-          <span className="hero_title_blue"> process </span>
+          , stay
+          <span className="hero_title_blue"> updated </span>
+          and get
+          <span className="hero_title_blue"> support</span>
           </h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
