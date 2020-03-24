@@ -1,61 +1,64 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Finalize the User Setup · GECKO Docs v1.0.10</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## On Logging in"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Finalize the User Setup · GECKO Docs v1.0.10"/><meta property="og:type" content="website"/><meta property="og:url" content="http://GECKODocs.github.io/Docs/"/><meta property="og:description" content="## On Logging in"/><meta property="og:image" content="http://GECKODocs.github.io/Docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="http://GECKODocs.github.io/Docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Docs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/arta.min.css"/><link rel="alternate" type="application/atom+xml" href="http://GECKODocs.github.io/Docs/blog/atom.xml" title="GECKO Docs v1.0.10 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="http://GECKODocs.github.io/Docs/blog/feed.xml" title="GECKO Docs v1.0.10 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/Docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/Docs/css/main.css"/><script src="/Docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docs/"><img class="logo" src="/Docs/img/favicon.ico" alt="GECKO Docs v1.0.10"/><h2 class="headerTitleWithLogo">GECKO Docs v1.0.10</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/Docs/docs/gs1" target="_self">Docs</a></li><li class=""><a href="/Docs/docs/api1" target="_self">API</a></li><li class=""><a href="/Docs/help" target="_self">Help</a></li><li class=""><a href="/Docs/blog/" target="_self">Blog</a></li><li class=""><a target="_self">Videos</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/gs1">Get started</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Docs/docs/gs2">Next Steps</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Dashboard</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/db1">Dashboard</a></li><li class="navListItem"><a class="navItem" href="/Docs/docs/db2">Project and tasks</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Projects</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/pr1">Projects</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Activity</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/act1">Activity</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Calendar</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/cal1">Calendar</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Reports</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/rep1">Reports</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">DLT Audits</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/dlt1">DLT audit</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Folders</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/fol1">Folder</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Users</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Docs/docs/usr1">Users</a></li></ul></div></div></section></div><script>
-            var coll = document.getElementsByClassName('collapsible');
-            var checkActiveCategory = true;
-            for (var i = 0; i < coll.length; i++) {
-              var links = coll[i].nextElementSibling.getElementsByTagName('*');
-              if (checkActiveCategory){
-                for (var j = 0; j < links.length; j++) {
-                  if (links[j].classList.contains('navListItemActive')){
-                    coll[i].nextElementSibling.classList.toggle('hide');
-                    coll[i].childNodes[1].classList.toggle('rotate');
-                    checkActiveCategory = false;
-                    break;
-                  }
-                }
-              }
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus">
 
-              coll[i].addEventListener('click', function() {
-                var arrow = this.childNodes[1];
-                arrow.classList.toggle('rotate');
-                var content = this.nextElementSibling;
-                content.classList.toggle('hide');
-              });
-            }
 
-            document.addEventListener('DOMContentLoaded', function() {
-              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
-              createToggler('#tocToggler', 'body', 'tocActive');
+<title data-react-helmet="true">Finalize the User Setup | GECKO Docs</title>
 
-              var headings = document.querySelector('.toc-headings');
-              headings && headings.addEventListener('click', function(event) {
-                var el = event.target;
-                while(el !== headings){
-                  if (el.tagName === 'A') {
-                    document.body.classList.remove('tocActive');
-                    break;
-                  } else{
-                    el = el.parentNode;
-                  }
-                }
-              }, false);
+<meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"><meta data-react-helmet="true" property="og:title" content="GECKO Docs"><meta data-react-helmet="true" name="twitter:card" content="summary"><meta data-react-helmet="true" name="description" content="import useBaseUrl from &#x27;@docusaurus/useBaseUrl&#x27;;"><meta data-react-helmet="true" property="og:description" content="import useBaseUrl from &#x27;@docusaurus/useBaseUrl&#x27;;"><meta data-react-helmet="true" property="og:url" content="https://geckodocs.github.io/docs/docs/gs2">
 
-              function createToggler(togglerSelector, targetSelector, className) {
-                var toggler = document.querySelector(togglerSelector);
-                var target = document.querySelector(targetSelector);
+<link data-react-helmet="true" rel="shortcut icon" href="/docs/img/geckoWhite.png">
 
-                if (!toggler) {
-                  return;
-                }
 
-                toggler.onclick = function(event) {
-                  event.preventDefault();
+<link rel="stylesheet" href="/docs/styles.c825553b.css">
 
-                  target.classList.toggle(className);
-                };
-              }
-            });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Finalize the User Setup</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="on-logging-in"></a><a href="#on-logging-in" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>On Logging in</h2>
-<p>Please make sure to edit your username and change your avatar as desired. It will help your colleagues find you easily when assigned to a task and find out who's working on the same / different tasks.</p>
-<p>There are other fields available too, to keep your profile up to date.</p>
-<p><img src="/Docs/docs/assets/userDetails.png" alt="On SignUp"></p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docs/docs/gs1"><span class="arrow-prev">← </span><span>Get started</span></a><a class="docs-next button" href="/Docs/docs/db1"><span>Dashboard</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#on-logging-in">On Logging in</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Docs/" class="nav-home"><img src="/Docs/img/favicon.ico" alt="GECKO Docs v1.0.10" width="66" height="58"/></a><div><h5>Docs</h5><a href="/Docs/docs/gs1.html">Getting Started</a><a href="/Docs/docs/db1.html">Dashboard</a><a href="/Docs/docs/api2.html">API Reference</a></div><div><h5>Community</h5><a href="/Docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/Docs/blog">Blog</a><a href="https://github.com/">GitHub</a></div></section><section class="copyright">Copyright © 2019 GECKO Governance</section></footer></div></body></html>
+
+<link rel="preload" href="/docs/styles.bb5bfb2a.js" as="script">
+
+<link rel="preload" href="/docs/runtime~main.238f04af.js" as="script">
+
+<link rel="preload" href="/docs/main.6c89e824.js" as="script">
+
+<link rel="preload" href="/docs/1.00f56be2.js" as="script">
+
+<link rel="preload" href="/docs/2.dc22f6a2.js" as="script">
+
+<link rel="preload" href="/docs/1be78505.40372225.js" as="script">
+
+<link rel="preload" href="/docs/64f9f2ab.9ecb2e74.js" as="script">
+
+<link rel="preload" href="/docs/17896441.27c4c140.js" as="script">
+
+<link rel="preload" href="/docs/06e02db6.264449cb.js" as="script">
+
+</head>
+<body>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=window.matchMedia("(prefers-color-scheme: dark)"),n=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();null!==n?t(n):e.matches&&t("dark")}()</script>
+<div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a aria-current="page" class="navbar__brand active" href="/docs/"><img class="navbar__logo" src="/docs/img/geck0.png" alt="My Site Logo"><strong class="navbar__title">GECKO</strong></a></div><div class="navbar__items navbar__items--right"><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/docs/gs1">Docs</a><a class="navbar__item navbar__link" href="/docs/blog">Blog</a><a class="navbar__item navbar__link" href="/docs/docs/api2">API</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_1gtM"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_keGJ moon_1gwN"></span></div><div class="react-toggle-track-x"><span class="toggle_keGJ sun_3CPA"></span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a aria-current="page" class="navbar__brand active" href="/docs/"><img class="navbar__logo" src="/docs/img/geck0.png" alt="My Site Logo"><strong class="navbar__title">GECKO</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/docs/docs/gs1">Docs</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/blog">Blog</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/docs/api2">API</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_1kjD"><div class="docSidebarContainer_1cYp"><div class="sidebar_1kLs"><div class="sidebarLogo_3ono"><img src="/docs/img/geck0.png" alt="My Site Logo"><strong>GECKO</strong></div><div class="menu menu--responsive menu_w2sC"><button aria-label="Open Menu" class="button button--secondary button--sm menu__button" type="button"><svg class="sidebarMenuIcon_2vk4" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 32 32" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><ul class="menu__list"><li class="menu__list-item"><a class="menu__link menu__link--sublist menu__link--active" href="#!">Getting Started</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/gs1">Get started</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link menu__link--active" href="/docs/docs/gs2">Next Steps</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Dashboard</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/db1">Dashboard</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/docs/db2">Project and tasks</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Projects</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/pr1">Projects</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Activity</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/act1">Activity</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Calendar</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/cal1">Calendar</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Reports</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/rep1">Reports</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">DLT Audits</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/dlt1">DLT audit</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Folders</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/fol1">Folder</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">Users</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/usr1">Users</a></li></ul></li><li class="menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#!">API</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/docs/api1">API Manual</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/docs/api2">Using API</a></li></ul></li></ul></div></div></div><main class="docMainContainer_FFX1"><div class="padding-vert--lg"><div class="container"><div class="row"><div class="col docItemCol_2GOA"><div class="docItemContainer_2cwg"><article><header><h1 class="docTitle_1vWb">Finalize the User Setup</h1></header><div class="markdown"><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="on-logging-in"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#on-logging-in" title="Direct link to heading">#</a>On Logging in</h2><p>Please make sure to edit your username and change your avatar as desired. It will help your colleagues find you easily when assigned to a task and find out who&#x27;s working on the same / different tasks.</p><p>There are other fields available too, to keep your profile up to date.</p><img alt="On Signup" src="/docs/img/userDetails.png"></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/docs/gs1"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« First time Setup</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/docs/db1"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Dashboard »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#on-logging-in" class="contents__link">On Logging in</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/docs/doc1">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/docs/doc2">Second Doc</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/tagged/docusaurus">Stack Overflow</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://discordapp.com/invite/docusaurus">Discord</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Social</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a></li><li class="footer__item"><a class="footer__link-item" target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus">Twitter</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc</div></div></div></footer>
+</div>
+
+<script src="/docs/styles.bb5bfb2a.js"></script>
+
+<script src="/docs/runtime~main.238f04af.js"></script>
+
+<script src="/docs/main.6c89e824.js"></script>
+
+<script src="/docs/1.00f56be2.js"></script>
+
+<script src="/docs/2.dc22f6a2.js"></script>
+
+<script src="/docs/1be78505.40372225.js"></script>
+
+<script src="/docs/64f9f2ab.9ecb2e74.js"></script>
+
+<script src="/docs/17896441.27c4c140.js"></script>
+
+<script src="/docs/06e02db6.264449cb.js"></script>
+
+
+</body>
+</html>
