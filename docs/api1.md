@@ -1,13 +1,11 @@
 ---
 id: api1
-title: Getting Started with API
+title: Getting Started With The API
 sidebar_label: API Manual
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<img alt="In Maintenance" src={useBaseUrl('img/apiMonitor.svg')}/>
+<!-- <img alt="In Maintenance" src={useBaseUrl('img/apiMonitor.svg')}/> -->
 
-There is nothing here at the moment , updates coming soon :)
-
-This is an ongoing piece of development work and is currently in progress.
+Our API is currently under construction. Please check back at a later date for updates.
