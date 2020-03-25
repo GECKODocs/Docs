@@ -10,7 +10,7 @@ module.exports = {
     "DLT Audits" : ["dlt1"],
     "Folders" : ["fol1"],
     "Users" : ["usr1"],
-    "API": ["api1", "api2"]
+    "API": ["api1"]
     
   },
   

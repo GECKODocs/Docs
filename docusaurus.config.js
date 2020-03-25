@@ -23,7 +23,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'right'},
         {
-          to: 'docs/api2',
+          to: 'docs/api1',
           label: 'API',
           position: 'right',
         },

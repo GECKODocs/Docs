@@ -1,17 +1,25 @@
 ---
 id: fol1
-title: Folders
-sidebar_label: Folder
+title: Document Repository Overview
+sidebar_label: Document Repository
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Folder is a Repo functionality
+## Folder Structure
 
-Acts as a repository of documents.
+The Document Repository allows you to **access and download digitally stored documents** that relate to specific tasks within your processes.
 
-Select a Project to view the list of tasks associated with each fund.
+Documents are stored within a folder structure. You can **quickly drill down to find the documents** you require.
 
-Files – displays any files attached to specific Tasks within a Project.
+
+**How do I access the Document Repository?**
+
+You can access the Document Repository by **clicking on the ‘Folders’ tab** on the main navigation. To find specific files or documents you first **select a Project** and then **select the specific task** that the documents relate to.
+
+All documentation uploaded to that task will be displayed.
+
+**Note**: Task visibility is based on user permissions.
+
 
 <img alt="Folder" src={useBaseUrl('img/folder.png')}/>
