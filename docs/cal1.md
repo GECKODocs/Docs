@@ -6,10 +6,6 @@ sidebar_label: Calendar
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-
-
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
-
 ## Calendar
 
 The Calendar page provides a view of different tasks, their associated due date, and status.

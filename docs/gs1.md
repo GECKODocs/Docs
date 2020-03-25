@@ -16,8 +16,6 @@ Initial User Setup on the GECKO platform is fast and easy. You will receive an i
 
 If for some reason you're having trouble signing up with the link please request your admin to resend you another invite. 
 
+:::caution Still unable to get invite
 In case you can't find the link in your inbox please go to your junk or spam box to see if it has been sent there instead
-
-
-
-<img alt="Confirm Link" src={useBaseUrl('img/emailVerification.png')}/>
+:::
