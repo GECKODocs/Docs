@@ -6,7 +6,7 @@ sidebar_label: Users
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Users Roles
+## User Roles
 Here you can set up new users and set different user permissions/roles.
 
 The user menu gives you the option to **Browse users, View System roles, Project roles,** and **Groups**.
@@ -36,6 +36,7 @@ Click the **Add System Role** button.
 Enter role name.
 
 Enter role description.
+
 Hit **Save** to save changes or cancel to return to the Roles Dashboard.
 
 ## Edit System Role
