@@ -12,18 +12,17 @@ To get started, the first thing to do while familiarising yourself with the GECK
 
 It’s a scrollable menu that can be hidden using the hamburger menu as a toggle ‘menu on/off’ button. 
 
+<img height="300px" alt="Navigation Menu" src={useBaseUrl('img/navigation.png')}/>
+
 ## Main Dashboard
 
 
-**Open Tasks** - Number of open tasks on the platform. Task visibility is based on user permissions.
-
-**Completed Tasks** - Number of complete tasks on the platform. Task visibility is based on user permissions.
-
-**Create** a New Project / Fund.
-
-**Manage** fund Categories, Workflows and Users.
-
-**Filter** by Project -   R.A.G Rating (Red, Amber, Green) piechart aggregation, filtering on Task Status within a specified Fund or Project. i.e. A centralised, birdseye view of tasks that are Complete, In Progress or Overdue. Task visibility is based on user permissions.
+- **Open Tasks** - Number of open tasks on the platform. Task visibility is based on user permissions.
+- **Completed Tasks** - Number of complete tasks on the platform. Task visibility is based on user permissions.
+- **Create** a New Project / Fund.
+- **Manage** fund Categories, Workflows and Users.
+- **Filter** by Project   
+  - R.A.G Rating (Red, Amber, Green) piechart aggregation, filtering on Task Status within a specified Fund   or Project. i.e. A centralised, birdseye view of tasks that are Complete, In Progress or Overdue. Task visibility is based on user permissions.
 
 <img alt="Dashboard" src={useBaseUrl('img/dashboard.png')}/>
 

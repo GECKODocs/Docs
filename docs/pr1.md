@@ -25,17 +25,19 @@ Add a new Project by clicking ‘Add Project’ on the Browse Projects screen.
 
 A pop-up screen will appear where you enter or select the following data:
 
-**Project Title**
-**Category**
-**Group**
-**Template**
-**Client**
-**Start Date**
-**Due Date**
-**Description**
-**Status**
+- **Project Title**
+- **Category**
+- **Group**
+- **Template**
+- **Client**
+- **Start Date**
+- **Due Date**
+- **Description**
+- **Status**
 
-**Note**: If Category ‘Fund’ has been selected, a variety of Fund specific data fields will be displayed to be filled in.
+:::important Note 
+If category ‘Fund’ has been selected, a variety of Fund specific data fields will be displayed to be filled in.
+:::
 
 You can then click **‘Start Project’**.
 
@@ -68,16 +70,17 @@ Add a new task by clicking ‘**Add New**’ within a Workflow Stage.
 
 A pop-up screen will appear where you enter or select the following data:
 
-**Task Title**
-**Milestone**
-**Repetition Time, i.e. Daily, Monthly, Annually**
-**Due Date**
-**Priority i.e. High, Low**
-**Description**
+- **Task Title**
+- **Milestone**
+- **Repetition Time, i.e. Daily, Monthly, Annually**
+- **Due Date**
+- **Priority i.e. High, Low**
+- **Description**
 
 
-Checklist
-Note: At this point, you also have the ability to create a Checklist / To Do List within the task to track smaller related actions.
+:::important Note 
+At this point, you also have the ability to create a ***Checklist / To Do List***  within the task to track smaller related actions.
+:::
 
 You can then click ‘**Add Task**’.
 
@@ -91,46 +94,43 @@ You can simply **click** on a task to view it.
 When you’re on the Task View screen you can make updates by clicking on a specific field then clicking the Tick to save your changes.
 
 Depending on your permission level, you can update the following: 
+- **Title**
+- **Status**
+- **Due Date**
+- **Add / Remove Assignees**
+- **Milestone**
+- **Repetition Time**
+- **Description**
 
-***Title***
-
-***Status***
-
-***Due Date***
-
-***Add / Remove Assignees***
-
-***Milestone***
-
-***Repetition Time***
-
-***Description***
+<img alt="Drag Tasks" src={useBaseUrl('img/taskEdit.png')}/>
 
 **File Upload**
-You can upload any files / documents related to the task by simply ‘dragging and dropping’ or clicking ‘Drop files here to upload’.
+You can upload any files / documents related to the task by simply ‘**dragging and dropping**’ or clicking ‘**Drop files here to upload**’.
 
-
+**Messaging**
+You can leave a message on the right-hand side of the Task View screen, that all users assigned to the task can read.
 
 **Checklist / To-Do List**
 As mentioned above, you can create a Checklist / To Do List within the task to track smaller related items.
 
+:::tip best practise
 The Checklist / To-Do list functionality allows you to assign specific users to an individual checklist item.
-
+:::
 
 **Tags**
 You can add multiple Tags to a task. This powerful functionality makes it easy to search for or aggregate across tasks for reporting purposes.
 
-**Messaging**
-You can leave a message on the right-hand side of the Task View screen, that all users assigned to the task can read.
+<img alt="Drag Tasks" src={useBaseUrl('img/tag&Upload.png')}/>
 
 
 **Task Audit Trail**
 Each task has its own audit trail which tracks all updates made to that specific task.
 
+:::important Note
+Audit trail stores all the addition and edit ever made to any project/task. There's a seperate tab available too if wish to just obtain audits on different project/task.
+:::
 
-<img alt="Drag Tasks" src={useBaseUrl('img/actionEdit.png')}/>
-
-<img alt="Drag-Tasks" src={useBaseUrl('img/fileUpload.png')}/>
+<img alt="Drag Tasks" src={useBaseUrl('img/auditTrail.png')}/>
 
 ## Sub Tasks
 A subtask is essentially just like a **regular task** and has all the same fields and functionality, except for ‘Repetition Time’.
@@ -143,7 +143,7 @@ You would create one or more subtasks on a parent task in a scenario where you h
 
 On the GECKO platform, you **won’t be able to close the parent task until all underlying subtasks have been marked as Complete**.
 
-<img alt="Drag Tasks" src={useBaseUrl('img/tags.png')}/>
+<img alt="Subtasks" src={useBaseUrl('img/subtasks.png')}/>
 
 ## Recurring Tasks
 
@@ -167,16 +167,19 @@ When the Due Date has been reached..
 
 When I click Complete on the task..
 
+:::important note 
+It’s worth noting here that if the original task contained any subtasks, the **same structure of ‘Parent task and its Subtasks’ will be created in the new task**.
+:::
+
 If the due date has been reached OR you have clicked Complete on a task, then **a new task will automatically be created with a new adjusted due date**. 
 
-**Note**: It’s worth noting here that if the original task contained any subtasks, the **same structure of ‘Parent task and its Subtasks’ will be created in the new task**.
-
-**Note**: As the new task gets created, the **previous task automatically gets archived** and will be removed from the Project Workflow Stage, or column.
-
+:::warning warning 
+As the new task gets created, the previous task automatically gets **archived** and will be **removed** from the Project Workflow Stage, or column.
+:::
 
 ## Archived Tasks
 
-A task gets archived ONLY if it has been set up as a recurring task and the **due date has been reached** or an **assignee of the task has clicked Complete**.
+A task gets archived only if it has been set up as a recurring task and the **due date has been reached** or an **assignee of the task has clicked Complete**.
 
 **How do I view Archived Tasks?**
 
@@ -197,10 +200,9 @@ All projects are created using workflows, you can use a workflow as a template w
 
 ## Categories
 
-A Category is essentially a '**type**' of **Project**. On the Browse Projects screen you can *filter Projects by Category*. 
+A Category is essentially a '**type**' of **Project**. On the Browse Projects screen you can *filter **Projects** by Category*. 
 
 Within the Categories section you can also create the milestones associated with your projects.
-
 
 You can Add new Categories or update and delete existing Categories.
 
@@ -209,14 +211,12 @@ You can Add new Categories or update and delete existing Categories.
 
 You can add new Task Statuses by clicking ‘**Add Status**’.
 
-
 Filter your status search by using the search functionality.
 
 
 ## Clients
 
 You can add new Clients by clicking ‘**Add Client**’.
-
 
 Filter your client search by using the search functionality.
 

@@ -8,9 +8,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Audits
 
-On the Audits page it can be seen how any changes made can be tracked within a given Project (or fund) and Task.
+On the Audits page it can be seen how any **changes made can be tracked** within a given Project (or fund) and Task.
 
-A full audit trail of activity is available for each Project/Fund/Task with the exact time and date a given field has been modified.
+A **full audit trail** of activity is available for each **Project/Fund/Task** with the exact time and date a given field has been modified.
 
 
 

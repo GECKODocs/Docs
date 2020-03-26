@@ -7,7 +7,7 @@ module.exports = {
     "Activity" : ["act1"],
     "Calendar" : ["cal1"],
     "Reports" : ["rep1"],
-    "DLT Audits" : ["dlt1"],
+    "Audits" : ["dlt1"],
     "Folders" : ["fol1"],
     "Users" : ["usr1"],
     "API": ["api1"]

@@ -9,6 +9,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: 'GECKO',
+      hideOnScroll: true, // set this to false if wanna keep the scrollbar fixed
       logo: {
         alt: 'My Site Logo',
         src: 'img/geck0.png',

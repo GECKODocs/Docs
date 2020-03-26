@@ -18,3 +18,7 @@ The Dashboard Task Finder allows you to perform a **quick search across tasks**.
 The user can then **drill down to action a specific task**.
 
 <img alt="Dashboard" src={useBaseUrl('img/dashboard2.png')}/>
+
+:::important note
+If you cant see any project or task here that simply means youre not added to any project or task in the system.
+:::
