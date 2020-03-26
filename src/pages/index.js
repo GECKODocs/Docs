@@ -13,7 +13,7 @@ const main = [ {
   description: (
     <>
        To make your onboarding experience great we are using best User Experience practices to get you up and 
-       running on the <a target="_blank" href="https://www.geckogovernance.io/"><b>GECKO</b></a>application. We also provide full 
+       running on the <a target="_blank" href="https://www.geckogovernance.io/"><b>GECKO</b></a> application. We also provide full 
        support of other business elements like compliance, regulation, and consultation.
     </>
   ),
