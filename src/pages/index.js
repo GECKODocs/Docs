@@ -12,9 +12,9 @@ const main = [ {
   imageUrl: 'img/onboarding.svg',
   description: (
     <>
-       To make your onbarding experience great we are using best  UX  practises to have you up and 
-       runing on <a target="_blank" href="https://www.geckogovernance.io/"><b> GECKO </b></a>application, we also provide full 
-       support of other business elements like compliance, regulation and consultation.
+       To make your onboarding experience great we are using best User Experience practices to get you up and 
+       running on the <a target="_blank" href="https://www.geckogovernance.io/"><b>GECKO</b></a>application. We also provide full 
+       support of other business elements like compliance, regulation, and consultation.
     </>
   ),
 },]
@@ -22,21 +22,21 @@ const main = [ {
 const features = [
  
   {
-    title: <>Up to Date</>,
+    title: <>Up To Date</>,
     imageUrl: 'img/docsUpdated.svg',
     description: (
       <>
-        Constantly updated with every new released features 🚀or bugs 🦠
+        Constantly updated with every newly released features 🚀 or bugs 🦠.
       </>
     ),
   },
   {
-    title: <>Help is just click away</>,
+    title: <>Help Is Just A Click Away</>,
     imageUrl: 'img/devSupport.svg',
     description: (
       <>
         Full support provided shall you feel lost or need any extra video
-        tutorials. Further open APIs are currently in progress.
+        tutorials. Further open APIs are currently under construction.
       </>
     ),
   },
