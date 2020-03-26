@@ -39,6 +39,9 @@ On scrolling down the page you will find the results of your search.
 
 Click the ‘**My Tasks Only**’ slider to filter the results to include only tasks that have been specifically assigned to you.
 
+:::caution caution
+While searching for the **overdue** task please avoid using dates since the trigger only runs on the due date of tasks and make it pointless for the need to input date and preventing the no results found.
+:::
 
 Below is the result of a particular search. Here you can choose the amount of activity entries shown per page by clicking on the dropdown ‘**Show 10 entries**’. 
 
@@ -54,7 +57,8 @@ The last column is titled ‘**Action**’. From here you can either **delete** 
 
 You can traverse through each page of results using the Previous and Next buttons on the bottom right.
 
-On clicking the edit icon for the task you want to action,
-you will be brought to the Task View screen.
-
 <img alt="Activity Search" src={useBaseUrl('img/activitySearch.png')}/>
+
+:::tip tip
+On clicking the ✏️icon of the desired task using searching capabilities is the quickest way to find and edit the task.
+:::

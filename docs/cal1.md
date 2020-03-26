@@ -16,6 +16,8 @@ At a ‘**Superuser**’ level, you can drag and drop tasks across the calendar 
 
 You can traverse through months using the forward and backward arrows above the calendar on the top right.
 
-Subtasks are currently differentiated from parent tasks on the calendar with a preceding(s).
+:::important note
+**Subtasks** are currently differentiated from **parent tasks** on the calendar with a preceding(s).
+:::
 
 <img alt="Calendar" src={useBaseUrl('img/calendar.png')}/>
