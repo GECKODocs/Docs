@@ -17,5 +17,5 @@ If for some reason you're having trouble signing up with the link please request
 :::
 
 :::caution Still unable to get invite
-In case you can't find the link in your inbox please go to your junk or spam box to see if it has been sent there instead
+In case you can't find the link in your inbox please go to your junk or spam box to see if it has been sent there instead.
 :::
