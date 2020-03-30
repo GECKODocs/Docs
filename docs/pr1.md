@@ -1,14 +1,14 @@
 ---
 id: pr1
-title: Project Overview
-sidebar_label: Project
+title: Projects Overview
+sidebar_label: Projects Overview
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Projects
 
-Once you click on ‘Projects’ from the navigation pane you have the option to Browse Projects, view Workflows, Categories, Statuses, Clients and Tags.
+Once you click on ‘Projects’ on the navigation pane you have the option to Browse Projects, view Workflows, Categories, Statuses, Clients and Tags.
 <img alt="Projects" src={useBaseUrl('img/browseProjects.png')}/>
 
 ## Browse Projects
