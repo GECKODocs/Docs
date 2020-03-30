@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Recent Projects
 
-This area allows for quick access to the four most recent Projects you have created or that you have been added to.
+This area allows for quick access to recent Projects you have created or that you have been added to.
 
 
 ## Task Finder
