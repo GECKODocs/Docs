@@ -11,22 +11,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 On the Activity page you will see a number of input boxes and drop down menus for specifying how you want to filter tasks within the system.
 
-Here you can specify which project you want to ***search*** within.
-
-You can search for the name of the activity if it’s known. 
-
-You can also choose from a drop down list of tags to find tasks with specific tags. 
-
-You can search by task status i.e. **Overdue**, In ***Progress***, ***Complete***. 
-
-It is also possible to search for tasks which have a due date within a given time window, set between a given ‘From’ and ‘To’ date.
-
-There is also an option to **search for archived tasks** only.
-
-Click the ’Find Tasks’ button to show the tasks you have searched for.
-
-**OR**
-
 You can filter and search for tasks across a range of criteria, which include:
 - **Project**
 - **Task Name**
@@ -34,6 +18,10 @@ You can filter and search for tasks across a range of criteria, which include:
 - **Task Status i.e. Overdue, In Progress, Complete**
 - **Due date range**
   - On clicking the ‘Due date FROM’ or ‘Due date TO’ field you will be given a calendar from   which you can select your date.
+
+There is also an option to **include archived tasks.**
+
+Click the ’Find Tasks’ button to show the tasks you have searched for.
 
 On scrolling down the page you will find the results of your search. 
 
