@@ -1,6 +1,6 @@
 ---
 id: fol1
-title: Document Repository Overview
+title: Document Repository
 sidebar_label: Document Repository
 ---
 
@@ -15,7 +15,7 @@ Documents are stored within a folder structure. You can **quickly drill down to 
 
 **How do I access the Document Repository?**
 
-You can access the Document Repository by **clicking on the ‘Folders’ tab** on the main navigation. To find specific files or documents you first **select a Project** and then **select the specific task** that the documents relate to.
+You can access the Document Repository by **clicking on the ‘Folders’ tab** on the main navigation. To find specific files or documents you first **select a project** and then **select the specific task** that the documents relate to.
 
 All documentation uploaded to that task will be displayed.
 
