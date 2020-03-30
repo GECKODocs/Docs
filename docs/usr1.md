@@ -1,7 +1,7 @@
 ---
 id: usr1
-title: Users
-sidebar_label: Users
+title: User Configuration
+sidebar_label: User Configuration
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
