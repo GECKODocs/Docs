@@ -1,12 +1,12 @@
 ---
 id: rep1
-title: Reports
+title: Reports Overview
 sidebar_label: Reports Overview
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## General Overview 
+## General 
 
 The GECKO Platform provides a number of **useful reports out of the box** to get you up and running. However, our reporting functionalities are frequently being updated.
 
