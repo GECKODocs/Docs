@@ -48,5 +48,5 @@ You can traverse through each page of results using the Previous and Next button
 <img alt="Activity Search" src={useBaseUrl('img/activitySearch.png')}/>
 
 :::tip tip
-On clicking the ✏️icon of the desired task using searching capabilities is the quickest way to find and edit the task.
+Clicking the ✏️icon of the desired task using the search functionality is the quickest way to find and edit a task.
 :::
