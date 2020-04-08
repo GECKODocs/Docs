@@ -122,6 +122,10 @@ You can add multiple Tags to a task. This powerful functionality makes it easy t
 
 <img alt="Drag Tasks" src={useBaseUrl('img/tag&Upload.png')}/>
 
+:::important note 
+To insert a link in the **Description** field first highlight the word/s you wish to contain the link, then click on the link icon on the top right of the Description field. From here click the **Insert link** button. You will be provided with 4 textboxes - **URL, Text, Title, Target**. Paste/type your link into the URL textbox. The **Text** textbox is the highlighted text that contains your hyperlink. The other 2 fields can be left blank. Click **Confirm** to insert your link.
+To open a link that is already present right click and click 'Open Link in New Tab'.
+:::
 
 **Task Audit Trail**
 Each task has its own audit trail which tracks all updates made to that specific task.
