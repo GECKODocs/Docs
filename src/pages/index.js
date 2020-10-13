@@ -82,17 +82,17 @@ function Home() {
       description="Welcome to the GECKO Documentation. You will find manual, APIs, docs and all support here">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-        <img alt="GECKO" class="gecko" src="img/geckoWhite.png"></img>
+        <img alt="GECKO" class="gecko" src="img/gecko-white.png"></img>
           {/*<h1 className="hero__title">{siteConfig.title}</h1>*/}
           <h1 className="hero__title">
           Fetch 
-          <span className="hero_title_blue"> relevant </span>
+          <span className="hero_title_accent"> relevant </span>
           documentation
-          <span className="hero_title_blue"> quickly</span>
+          <span className="hero_title_accent"> quickly</span>
           , stay
-          <span className="hero_title_blue"> updated </span>
+          <span className="hero_title_accent"> updated </span>
           and get
-          <span className="hero_title_blue"> support</span>
+          <span className="hero_title_accent"> support</span>
           </h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>

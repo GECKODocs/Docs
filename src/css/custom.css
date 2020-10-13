@@ -7,17 +7,14 @@
 
 /* You can override the default Infima variables here. // #f7b945 */ 
 :root {
-  --ifm-color-primary: #4daefd;
-  --ifm-color-primary-dark: #2c9ffd;
-  --ifm-color-primary-darker: #1c98fc;
-  --ifm-color-primary-darkest: #037fe4;
-  --ifm-color-primary-light: #6ebdfd;
-  --ifm-color-primary-lighter: #7ec4fe;
-  --ifm-color-primary-lightest: #afdbfe;
+  --ifm-color-primary: #006cff;
+  --ifm-color-accent: #ff9f00;
+  --ifm-color-white: #ffffff;
+  --ifm-color-black: #060b1f;
+  --ifm-color-united-blue: #4c98ff;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(2, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
@@ -25,23 +22,25 @@
 
 .hero.hero--primary {
   display: flex;
-  --ifm-hero-background-color: #303846;
+  --ifm-hero-background-color: var(--ifm-color-black);
 }
 
-.hero_title_blue {
-  color: #4daefd;
+.hero_title_accent {
+  color: var( --ifm-color-white);
+}
+
+.hero__title {
+  color: var(--ifm-color-accent);
 }
 
 
 .button.button--lg {
   border: 2px solid;
-  border-color: #4daefd;
+  border-color: var(--ifm-color-united-blue);
   color: #fff;
   line-height: 1.2em;
   text-decoration: none!important;
   text-transform: uppercase;
-  -webkit-transition: background .3s,color .3s;
-  transition: background .3s,color .3s;
   border-radius: 8px;
   font-size: 24px;
   font-weight: 700;
@@ -49,8 +48,8 @@
 }
 
 .button.button--lg:hover{
-  border-color: #4daefd;
-  color: #4daefd;
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-accent);
 }
 
 .gecko{

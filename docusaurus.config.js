@@ -3,7 +3,7 @@ module.exports = {
   tagline: '',
   url: 'https://geckodocs.github.io',
   baseUrl: '/docs/',
-  favicon: 'img/geckoWhite.png',
+  favicon: 'img/gecko-icon.png',
   organizationName: 'GECKODocs', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   themeConfig: {
@@ -12,10 +12,10 @@ module.exports = {
       hideOnScroll: true, // set this to false if wanna keep the scrollbar fixed
       logo: {
         alt: 'My Site Logo',
-        src: 'img/geck0.png',
-        srcDark : 'img/blue.png',
+        src: 'img/gecko-icon.png',
+        srcDark : 'img/gecko-white.png',
       },
-      links: [
+      items: [
         {
           to: 'docs/gs1',
           activeBasePath: 'docs',
