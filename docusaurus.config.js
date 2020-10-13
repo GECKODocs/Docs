@@ -15,7 +15,7 @@ module.exports = {
         src: 'img/geck0.png',
         srcDark : 'img/blue.png',
       },
-      links: [
+      items: [
         {
           to: 'docs/gs1',
           activeBasePath: 'docs',
