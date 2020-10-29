@@ -4,13 +4,23 @@ title: Getting Started
 sidebar_label: Getting started
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import ReactPlayer from 'react-player/lazy';
+
 
 ## Initial Setup
 
 Initial User Setup on the GECKO platform is fast and easy. You will receive an invite to your email inbox. Simply follow the link and fill in the relevant fields. Once you are done, you will be able to log in with this email and password.
 
-<img alt="OnSignup" src={useBaseUrl('img/confirmSignup.png')}/>
+### Demo
+
+  <ReactPlayer 
+  url='https://vimeo.com/473437163/9916d927d7'
+  width="100%"
+  controls="true"/>    
+
+<br/>
+<br/>
+
 
 :::important Note
 If for some reason you're having trouble signing up with the link please request your admin to resend you another invite. 
