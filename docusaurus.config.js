@@ -79,6 +79,19 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} GECKO`,
     },
+
+    algolia: {
+      apiKey: '5fc3ee9b575bc6bba52a13da340f7f2a',
+      indexName: 'gecko',
+
+      // Optional: see doc section bellow
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
   },
   presets: [
     [
