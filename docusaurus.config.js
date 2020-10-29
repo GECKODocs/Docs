@@ -1,3 +1,8 @@
+
+require("dotenv").config({
+  path: `.env.production`,
+})
+
 module.exports = {
   title: 'GECKO Docs',
   tagline: '',
@@ -81,8 +86,8 @@ module.exports = {
     },
 
     algolia: {
-      apiKey: '5fc3ee9b575bc6bba52a13da340f7f2a',
-      indexName: 'gecko',
+      apiKey: process.env.ALGOLIA_KEY,
+      indexName: process.env.ALGOLIA_INDEX,
 
       // Optional: see doc section bellow
       contextualSearch: true,
