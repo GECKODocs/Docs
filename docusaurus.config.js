@@ -93,9 +93,10 @@ module.exports = {
       contextualSearch: true,
 
       // Optional: Algolia search parameters
-      searchParameters: {},
+      searchParameters: { "facetFilters": ["tags:docs"] },
 
       //... other Algolia params
+
     },
   },
   presets: [
